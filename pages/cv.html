@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      meter::-webkit-meter-bar {
+        width: 250px;
+        height: 19px;
+        border-radius: 1px;
+        background: none; /* Required to get rid of the default background property */
+        background-color: whiteSmoke;
+        box-shadow: 0 5px 5px -5px #333 inset;
+      }
+      meter::-webkit-meter-optimum-value {
+        background: linear-gradient(
+          214deg,
+          rgb(195, 37, 103) 20%,
+          rgb(82, 28, 181) 80%
+        );
+      }
+
+      .g {
+        height: 20px;
+      }
+
+      #leftPart {
+        /* padding: 30px; */
+        width: 48%;
+        padding: 2rem;
+      }
+      p {
+        display: inline-block;
+      }
+
+      .rghit article > p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .left article > p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      /* .left,
+      .rghit {
+        height: 45vh;
+      } */
+      .rghitPart {
+        width: 47%;
+        padding: 2rem;
+      }
+      .rghit article > h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .left article > h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .main {
+        display: flex;
+        padding: 4rem;
+
+        justify-content: space-around;
+      }
+      .date {
+        display: flex;
+        justify-content: space-between;
+      }
+      h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: xx-large;
+        font-weight: 900;
+        color: rgb(240 18 190);
+      }
+      .progres {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .Contact {
+        margin-bottom: 50px;
+      }
+      .maimImge {
+        /* border: 1px solid black; */
+        border-radius: 0% 0% 50% 50%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+      /* .maimImgeContener {
+        text-align: center;
+      } */
+      .mail {
+        color: rgb(240 18 190);
+        font-weight: bold;
+
+        font-size: large;
+      }
+      .contantItmes {
+        display: flex;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <section id="leftPart">
+        <section class="left maimImgeContener">
+          <img
+            class="maimImge"
+            src="../images/stretching.png"
+            width="70%"
+            height="300px"
+          />
+        </section>
+        <section class="left">
+          <h1>About ME</h1>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+              saepe laborum praesentium, quisquam ad iusto ab. Numquam, eaque
+              aut sit autem totam voluptatibus molestias sequi alias neque velit
+              consequuntur placeat.
+            </p>
+          </article>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+              saepe laborum praesentium, quisquam ad iusto ab. Numquam, eaque
+              aut sit autem totam voluptatibus molestias sequi alias neque velit
+              consequuntur placeat.
+            </p>
+          </article>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+              saepe laborum praesentium, quisquam ad iusto ab. Numquam, eaque
+            </p>
+          </article>
+        </section>
+        <section class="left">
+          <h1>Work Experience</h1>
+          <article>
+            <section class="date">
+              <h3>ABC Company</h3>
+              <h3>2010 - 2013</h3>
+            </section>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              at facilis voluptatibus. Deleniti error vero temporibus aliquid,
+              ipsa voluptatum quaerat cum porro nam laborum optio, officiis eius
+              velit, veniam nemo.
+            </p>
+          </article>
+          <article>
+            <section class="date">
+              <h3>ABC Company</h3>
+              <h3>2010 - 2013</h3>
+            </section>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              at facilis voluptatibus. Deleniti error vero temporibus aliquid,
+              ipsa voluptatum quaerat cum porro nam laborum optio, officiis eius
+              velit, veniam nemo.
+            </p>
+          </article>
+          <article>
+            <section class="date">
+              <h3>ABC Company</h3>
+              <h3>2010 - 2013</h3>
+            </section>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              at facilis voluptatibus. Deleniti error vero temporibus aliquid,
+              ipsa voluptatum quaerat cum porro nam laborum optio, officiis eius
+              velit, veniam nemo.
+            </p>
+          </article>
+        </section>
+        <section class="left">
+          <h1>Skills</h1>
+          <div class="progres">
+            <label for="ai">AI</label>&emsp;&emsp;&emsp;&emsp;
+            <meter id="ai" value="70" max="100">70%</meter>
+          </div>
+          <div class="progres">
+            <label for="ps">PS</label>&emsp;&emsp;&emsp;&emsp;
+            <meter id="ps" value="50" max="100">50%</meter>
+          </div>
+          <div class="progres">
+            <label for="as">AS</label>&emsp;&emsp;&emsp;&emsp;
+            <meter id="as" value="95" max="100">95%</meter>
+          </div>
+          <div class="progres">
+            <label for="css">CSS</label>&emsp;&emsp;&emsp;
+            <meter id="css" value="30" max="100">30%</meter>
+          </div>
+        </section>
+      </section>
+      <section class="rghitPart">
+        <section class="rghit Contact">
+          <img
+            src="../images/jessica-smith-logo.png"
+            width="100%"
+            height="80px"
+          />
+          <h1 onmouseover="playaudio()">Contact</h1>
+          <div class="contantItmes">
+            <img class="g" src="../images/address.png" />
+            <address style="display: inline-block">
+              123 Park Avenue,Michigen,ml
+            </address>
+          </div>
+          <div class="contantItmes">
+            <img class="g" src="../images/calendar.png" />
+            <time>11/12/1996</time>
+          </div>
+          <div class="contantItmes">
+            <img class="g" src="../images/phone-book.png" />
+            <p>123 456 7899</p>
+          </div>
+          <div class="contantItmes">
+            <img class="g" src="../images/email.png" />
+            <p>info@hioom.com</p>
+          </div>
+
+          <!-- <img class="g" src="../images/link.png" /> -->
+          <p class="mail">www.hioom.com</p>
+        </section>
+        <section class="rghit">
+          <h1>REFRENCES</h1>
+          <article>
+            <h3>2010 - 2013 ABC Company</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+              fugiat laudantium facilis iusto. Hic in veritatis, porro facilis
+              enim incidunt repudiandae
+            </p>
+          </article>
+          <article>
+            <h3>2010 - 2013 ABC Company</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+              fugiat laudantium facilis iusto. Hic in veritatis, porro facilis
+              enim incidunt repudiandae fugiat laudantium facilis iusto. Hic in
+              veritatis, porro facilis enim incidunt repudiandae
+            </p>
+          </article>
+        </section>
+        <section class="rghit">
+          <h1>Education</h1>
+          <article>
+            <section class="date">
+              <h3>ABC Company</h3>
+              <h3>2010 - 2013</h3>
+            </section>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              at facilis voluptatibus. Deleniti error vero temporibus aliquid,
+              ipsa voluptatum quaerat cum porro nam laborum optio, officiis eius
+              velit, veniam nemo.
+            </p>
+          </article>
+          <article>
+            <section class="date">
+              <h3>ABC Company</h3>
+              <h3>2010 - 2013</h3>
+            </section>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              at facilis voluptatibus. Deleniti error vero temporibus aliquid,
+              ipsa voluptatum quaerat cum porro nam laborum optio, officiis eius
+              velit, veniam nemo.
+            </p>
+          </article>
+          <article>
+            <section class="date">
+              <h3>ABC Company</h3>
+              <h3>2010 - 2013</h3>
+            </section>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              at facilis voluptatibus. Deleniti error vero temporibus aliquid,
+              ipsa voluptatum quaerat cum porro nam laborum optio, officiis eius
+              velit, veniam nemo.
+            </p>
+          </article>
+        </section>
+        <section class="rghit">
+          <h1>AWARDS</h1>
+          <article>
+            <section class="date">
+              <h3>ABC Company</h3>
+              <h3>2010 - 2013</h3>
+            </section>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+              ipsa dolor, quisquam illo nobis commodi consectetur odio
+              dignissimos, id, ea neque animi repudiandae odit! Autem ratione
+              quo est animi consequatur? quo est animi consequatur?
+            </p>
+          </article>
+        </section>
+      </section>
+    </section>
+    <br />
+    <footer>
+      <img src="../images/Capture.JPG" width="100%" />
+    </footer>
+    <audio id="audio1">
+      <source src="../audio/rain-on-roof.mp3" />
+      <source src="../audio/rain-on-roof.ogg" />
+      <source src="../audio/rain-on-roof.wav" />
+    </audio>
+    <div
+      style="
+        background-image: url(../images/wallpaperbetter.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        position: relative;
+      "
+    >
+      <video
+        controls
+        autoplay
+        muted
+        loop
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        "
+      >
+        <source src="../vidoes/Swans - 1287.mp4" />
+        <source src="../vidoes/Swans - 1287.webm" />
+      </video>
+    </div>
+
+    <script>
+      var audio = document.getElementById("audio1");
+      // audio.play()
+      function playaudio() {
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }
+    </script>
+  </body>
+</html>

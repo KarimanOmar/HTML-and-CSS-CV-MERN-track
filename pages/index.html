@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #main {
+        width: 50%;
+        height: 33vh;
+        margin: auto;
+        margin-top: 5px;
+        border: 1px solid black;
+      }
+      header,
+      section,
+      footer,
+      h5 {
+        border: 1px solid black;
+        text-align: center;
+      }
+      li {
+        display: inline-block;
+        width: 20%;
+      }
+      li:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        color: lime;
+      }
+      #section2 {
+        width: 20%;
+        float: left;
+      }
+      #section2 > h5 {
+        margin: 10px;
+      }
+      #section3 {
+        float: right;
+        width: 78%;
+        height: 20vh;
+      }
+      footer,
+      footer > h1 {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="main">
+      <header id="heder1">
+        <h1>Welcom</h1>
+      </header>
+      <nav>
+        <ul>
+          <li>option1</li>
+          <li>option2</li>
+          <li>option3</li>
+        </ul>
+      </nav>
+      <section>
+        <div id="section2">
+          <h5>index1</h5>
+          <h5>index2</h5>
+          <h5>index3</h5>
+          <h5>index4</h5>
+        </div>
+        <section id="section3">
+          <h1 style="margin-top: 30px">section contant</h1>
+        </section>
+      </section>
+      <footer><h1>footer</h1></footer>
+    </section>
+  </body>
+</html>
